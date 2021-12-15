@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>OztekinSoft - Portfolio Details</title>
+</head>
+
+<body>
+    <!-- ===== Header Section ===== -->
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="./img/oztekinsoft-logo.PNG" alt="Logo" class="logo" style="cursor: pointer;">
+            </a>
+
+            <nav>
+                <div class="nav-menu">
+                    <a href="index.html#" class="menu-item">Home</a>
+                    <a href="index.html#about" class="menu-item">About</a>
+                    <a href="index.html#services" class="menu-item">Services</a>
+                    <a href="index.html#portfolio" class="menu-item selected">Portfolio</a>
+                    <a href="index.html#team" class="menu-item">Team</a>
+                    <a href="index.html#pricing" class="menu-item">Pricing</a>
+                    <a href="index.html#contact" class="menu-item">Contact</a>
+                    <a href="#" class="menu-item btn btn-primary">Get Started</a>
+                </div>
+                <div class="hamburger-menu">
+                    <span class="first"> </span>
+                    <span class="middle"> </span>
+                    <span class="last"> </span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header Section -->
+    <!-- ===== Breadcrumbs Section ===== -->
+    <section class="breadcrumbs m-t-3">
+        <div class="container p-v-1">
+            <h1>Portfolio Details</h1>
+            <ol>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li>Portfolio Details</li>
+            </ol>
+        </div>
+    </section>
+    <!-- End Header Section -->
+    <!-- ===== Portfolio Details Section ===== -->
+    <section class="portfolio-details">
+        <div class="container p-t-3">
+            <div class="left">
+                <div class="extra-wrapper">
+                    <div class="portfolio-details-slider swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./img/portfolio-details-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/portfolio-details-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/portfolio-details-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="portfolio-info">
+                    <h2>Project Information</h2>
+                    <hr class="m-v-1 fading">
+                    <p><span>Category: </span>Web design</p>
+                    <p><span>Client: </span>ASU Company</p>
+                    <p><span>Project date: </span>01 March, 2020</p>
+                    <p><span>Project URL: </span><a href="#" class="selected">www.example.com</a></p>
+                </div>
+                <h2 class="m-t-2 m-b-1">This is an example of portfolio detail</h2>
+                <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+                    Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
+                    accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum
+                    deserunt eius.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Section -->
+    <!-- ======= Footer Section ====== -->
+    <section class="footer m-t-3 p-v-1" id="footer">
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright © <span>OztekinSoft.</span> All Rights Reserved</p>
+                <p>Designed by Tuldila</p>
+            </div>
+            <div class="footer-menu">
+                <a href="index.html" class="item">Home</a>
+                <a href="index.html#about" class="item">About</a>
+                <a href="#" class="item">Privacy Policy</a>
+                <a href="#" class="item">Terms of Use</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer Section -->
+
+
+    <!-- JS Files-->
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper(".swiper", {
+            // Optional parameters
+            direction: "horizontal",
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            // If we need pagination
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="./js/main.js"></script>
+    <!-- JS Files-->
+</body>
+
+</html>
